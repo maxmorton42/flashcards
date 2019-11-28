@@ -1,0 +1,44 @@
+.maincontainer{
+  position: relative;
+  width: 250px;
+  height: 320px;
+}
+
+.thecard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all .9s ease;
+}
+
+.thecard:hover{
+  transform: rotateY(180deg)
+}
+
+.thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #5fc580;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
