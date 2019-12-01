@@ -1,11 +1,20 @@
+body{
+  background: rgb(20, 88, 100);
+  }
+
 .maincontainer{
-  position: relative;
-  width: 250px;
-  height: 320px;
+  width:200px; 
+  height:300px; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  margin-top: -250px; 
+  margin-left: -100px; 
 }
 
 .thecard{
-  position: absolute;
+  position: relative;
+  text-align: center;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -31,6 +40,7 @@
 
 .theback{
   position: absolute;
+  text-align: center;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -41,4 +51,93 @@
   border-radius: 20px;
   font-size: 18px;
   font-weight: bold;
+}
+
+html{
+  min-width:100%;
+  max-width:900px;
+  overflow:hidden;
+}
+h4{
+  text-align: center;
+  position: relative;
+  padding-right: 5em;
+  margin-right: 180px;
+}
+
+h1{
+  text-align:center;
+  font-family:sans-serif;
+}
+p {
+  text-align: center;
+}
+
+#activeCardButtons {
+  min-width: 100%;
+  max-width: 900px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+#prev {
+
+  margin-left: 0px;
+  padding: 2px;
+}
+
+#deleted {
+  position:relative;
+  width: 50px;
+  left:50%;
+  margin-left:-25px;
+}
+#next {
+float:right;
+  margin-right:15px;
+}
+#submit {
+  position:relative;
+  width:180px;
+  margin-left:0px;
+  margin-top:10px;
+  margin-bottom:10px;
+  display:block;
+}
+#cardForm {
+  position:absolute;
+  width: 100%;
+  margin-left:50%;
+  margin-top:10px;
+}
+#front, #back{
+  display:block;
+}
+
+#formContainer{
+  display:block;
+  position:relative;
+  margin-left:-90px;
+  width:100%;
+}
+#newTerm{
+  position:relative;
+  width:180px;
+  margin-top:10px;
+  display:block;
+}
+#newDef{
+  position:relative;
+  width:180px;
+  margin-top:10px;
+  
+}
+#clearDeck{
+  position:relative;
+  width:360px;
+  margin-left:-90px;
+  display: block;
+}
+hr {
+  margin-left:-8px;
 }

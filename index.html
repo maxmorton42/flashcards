@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
     <title>Flip That Card</title>
     <link rel="stylesheet" href="style.css">
@@ -9,12 +9,12 @@
 
     <div class="thecard">
 
-    <div class="thefront">front of card
-      <p>test</p> 
+    <div class="thefront"><br /><br /><h3>front of card</h3>
+      <p id="frontinfo"></p> 
     </div>
 
-    <div class="theback">back of card
-        <p>test</p> 
+    <div class="theback"><br /><br /><h3>back of card</h3>
+        <p id="backinfo"></p> 
     </div>
 
 
@@ -25,4 +25,55 @@
     <button class="addnew" id="newbutton">Submit</button>
     <script src="index.js"></script>
   </body>
-</html>
+</html> -->
+
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+      <title>"datflip"</title>
+
+  </head>
+
+<body>
+    <h1>Create Your Own Flashcard Deck</h1><br>
+    <h4 style="width:100%; text-align:center">Enjoy!</h4>
+    <hr>
+    <div class="maincontainer">
+
+        <div class="thecard">
+    
+        <div class="thefront"><br /><br /><h3>front</h3>
+          <p id="front"></p> 
+        </div>
+    
+        <div class="theback"><br /><br /><h3>back</h3>
+            <p id="back"></p> 
+      </div>
+    
+    </div><br><br><br>
+    <div id ="activeCardButtons">
+      <button id="prev" onclick="prevCard()">Previous Card
+    </button>
+    
+    <button id="next" onclick="nextCard()">Next Card </button><br><br>
+    <button id="deleted" type="button" value="Deleted" onclick="delete1()">Delete</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="formContainer">
+      <form id="cardForm">
+        <input id="newTerm" type="text" placeholder="Add your own term or concept..." onKeyDown="if(event.keyCode==13) document.getElementById('newDef').focus()">
+        <input id="newDef" type="text" placeholder="...give it a definition, then click the button to..." onKeyDown="if(event.keyCode==13) cardAdd()">
+        <br>
+        <input id="submit" type="button" value="add it to the deck!" onClick="cardAdd()">
+        <br>
+        <input id="clearDeck" type="button" value="clear the deck!" onClick="emptyDeck()">
+      </form>
+      <br>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+
+  </html>
