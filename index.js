@@ -21,13 +21,14 @@ var card3 = new Card(
   "GB Kicker?",
   "Mason Crosby",
 );
-
+//add cards to my deck
 var myCards = [card1, card2, card3];
 var cardIndex = 0;
-
+// print front and back
 front.innerHTML = card1.term;
 back.innerHTML = card1.definition;
 
+//  add a card clear my form and update new placeholders
 function cardAdd(formFront, formBack) {
   function clearForm() {
     document.getElementById("newTerm").value = "";
@@ -71,12 +72,13 @@ function cardAdd(formFront, formBack) {
   }
   document.getElementById("newTerm").focus();
 }
-
+//next card
 function nextCard() {
   cardIndex = (cardIndex + 1) % myCards.length;
   front.innerHTML = myCards[cardIndex].term;
   back.innerHTML = myCards[cardIndex].definition;
 }
+//last card
 function prevCard() {
   if (cardIndex > 0)
     cardIndex = (cardIndex - 1);
@@ -93,14 +95,14 @@ function prevCard() {
 //   myCards.splice(x, 1);
 //     }
 //   }
-
+//delete last entry
   function delete1() {
 var confirmation = confirm("delete?")
 if (confirmation) {
 myCards.pop();
     }
   }
-
+//empty deck
     function emptyDeck() {
       var confirmation = confirm("delete this entire deck?");
       if (confirmation) {

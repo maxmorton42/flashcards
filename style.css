@@ -1,7 +1,7 @@
 body{
   background: rgb(20, 88, 100);
   }
-
+/* whole card */
 .maincontainer{
   width:200px; 
   height:300px; 
@@ -52,7 +52,7 @@ body{
   font-size: 18px;
   font-weight: bold;
 }
-
+/* end of card */
 html{
   min-width:100%;
   max-width:900px;
