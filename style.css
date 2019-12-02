@@ -81,7 +81,6 @@ p {
   
 }
 #prev {
-
   margin-left: 0px;
   padding: 2px;
 }
@@ -94,7 +93,7 @@ p {
 }
 #next {
 float:right;
-  margin-right:15px;
+  margin-right:20px;
 }
 #submit {
   position:relative;

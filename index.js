@@ -9,7 +9,7 @@ var back = document.getElementById("back");
 var submit = document.getElementById("submit");
 var clearDeck = document.getElementById("clearDeck");
 var formFront, formBack;
-var deleted =document.getElementById("deleted")
+
 
 var card1 = new Card(
   "GB QB?",
